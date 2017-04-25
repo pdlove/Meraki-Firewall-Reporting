@@ -1,0 +1,18 @@
+{
+  "name": "MerakiSyslog",
+  "version": "0.2.0",
+  "description": "Starting Development of Meraki Syslog Capture",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "node-netflowv9": "^0.2.12",
+    "queue": "^4.0.0",
+    "sqlite3": "^3.1.8"
+  },
+  "engines": {
+    "node": "4.0.0"
+  }
+}
