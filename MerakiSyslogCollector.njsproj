@@ -30,6 +30,12 @@
   <ItemGroup>
     <Compile Include="index.js" />
     <Compile Include="meraki_syslog_parser.js" />
+    <Compile Include="snmp\translatedMIBS.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="switches\SwitchSNMP.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="syslog.js" />
     <Compile Include="test.js" />
   </ItemGroup>
@@ -37,6 +43,11 @@
     <Content Include="package.json">
       <SubType>Code</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="meraki_specific\" />
+    <Folder Include="snmp\" />
+    <Folder Include="switches\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
